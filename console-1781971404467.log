@@ -1,0 +1,164 @@
+var a ;
+undefined
+typeof a;
+'undefined'
+a=10;
+10
+typeof a;
+'number'
+a="Amit";
+'Amit'
+typeof a;
+'string'
+a=true;
+true
+typeof a;
+'boolean'
+a=10;
+10
+typeof a;
+'number'
+a;
+10
+a + 20;
+30
+a;
+10
+a= 1;
+1
+a=5346457567657;
+5346457567657
+typeof a;
+'number'
+a=7697546985476895476897549867495867894576987459867;
+7.697546985476896e+48
+a=574967458967894567894576985479n;
+574967458967894567894576985479n
+typeof a;
+'bigint'
+a=Number.MAX_SAFE_INTEGER;
+9007199254740991
+a=5345789345789476894578967596759476945768;
+5.345789345789477e+39
+a=Number.MAX_SAFE_INTEGER;
+9007199254740991
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+a=9007199254740992n;
+9007199254740992n
+++a;
+9007199254740993n
+++a;
+9007199254740994n
+++a;
+9007199254740995n
+++a;
+9007199254740996n
+++a;
+9007199254740997n
+a = BigInt("5734895789439867458976984578697549");
+5734895789439867458976984578697549n
+a + 645645;
+VM841:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:3
+(anonymous) @ VM841:1
+a + 645645n;
+5734895789439867458976984579343194n
+a=10.20;
+10.2
+typeof a;
+'number'
+a=1;
+1
+a=534645645466;
+534645645466
+a=20.90;
+20.9
+typeof a;
+'number'
+a= 10 -"Amit";
+NaN
+a;
+NaN
+typeof a;
+'number'
+10 - "ten"
+NaN
+10 - "10"
+0
+a;
+NaN
+isNaN(a)?"Something went wrong " : a;
+'Something went wrong '
+a = 1000/0;
+Infinity
+typeof a;
+'number'
+isFinite(a)?a:"Something went Wrong ";
+'Something went Wrong '
+a= "Amit";
+'Amit'
+typeof a;
+'string'
+typeof (a);
+'string'
+typeof (10 + (20 -10));
+'number'
+a="Amit";
+'Amit'
+a='Amit';
+'Amit'
+a="Let's do it ";
+"Let's do it "
+a=`kdjgklfjdgfdlkjhgklhj
+lgjdklgjdklf
+ghdfkjhgd`;
+'kdjgklfjdgfdlkjhgklhj\nlgjdklgjdklf\nghdfkjhgd'
+console.log(a);
+VM1739:1 kdjgklfjdgfdlkjhgklhj
+lgjdklgjdklf
+ghdfkjhgd
+undefined
+typeof console;
+'object'
+Object;
+ƒ Object() { [native code] }
+typeof Object;
+'function'
+class A{
+}
+undefined
+typeof A;
+'function'
+var x = 10;
+undefined
+var y = 20;
+undefined
+var z = x + y;
+undefined
+console.log("X is "+x+" Y is "+y + " z is "+z);
+VM2193:1 X is 10 Y is 20 z is 30
+undefined
+console.log(`X is ${x} Y is ${y} Z is ${z}`);
+VM2275:1 X is 10 Y is 20 Z is 30
+undefined
+var w = Symbol();
+undefined
+w;
+Symbol()
+typeof w;
+'symbol'
+typeof Symbol;
+'function'
+Symbol() == Symbol();
+false
+Math.random();
+0.3890615021639229

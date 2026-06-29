@@ -1,0 +1,80 @@
+var a = 10;
+undefined
+typeof a;
+'number'
+a = "Amit";
+'Amit'
+typeof a;
+'string'
+var arr = [10, 20 , "Amit", true, [90,100]];
+undefined
+typeof arr;
+'object'
+arr.push(9999);
+6
+arr instanceof Array;
+true
+typeof Array;
+'function'
+Array.prototype;
+[at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]
+Object.prototype;
+{__defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, __lookupSetter__: ƒ, …}
+Array.prototype.__proto__;
+{__defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, __lookupSetter__: ƒ, …}
+Array.prototype.__proto__ == Object.prototype;
+true
+Object.prototype.__proto__;
+null
+var arr = [10, 20 , "Amit", true, [90,100]];
+undefined
+;arr[0]
+10
+var dhoni = {name : 'MS DHONI', age : 43, team : 'India', 6 : 30 , 4 : 100 , "full address" : "Mumbai" };
+undefined
+typeof dhoni;
+'object'
+dhoni instanceof Array;
+false
+dhoni instanceof Object;
+true
+dhoni.name;
+'MS DHONI'
+dhoni.team;
+'India'
+dhoni.6;
+VM1387:1 Uncaught SyntaxError: Unexpected number
+dhoni[6];
+30
+dhoni["full address"];
+'Mumbai'
+var x = 'age';
+undefined
+dhoni.x;
+undefined
+dhoni[x];
+43
+for(var key in dhoni){
+    console.log(key);
+}
+VM1621:2 4
+VM1621:2 6
+VM1621:2 name
+VM1621:2 age
+VM1621:2 team
+VM1621:2 full address
+undefined
+for(var key in dhoni){
+    console.log(key, dhoni[key]);
+}
+VM1658:2 4 100
+VM1658:2 6 30
+VM1658:2 name MS DHONI
+VM1658:2 age 43
+VM1658:2 team India
+VM1658:2 full address Mumbai
+undefined
+dhoni = null;
+null
+typeof dhoni;
+'object'

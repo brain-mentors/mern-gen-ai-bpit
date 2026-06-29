@@ -1,0 +1,190 @@
+function show(){
+    console.log("I am the show ");
+}
+undefined
+show();
+VM89:2 I am the show 
+undefined
+function show(){
+    var z = 10;
+    var m = 20;
+    var e = z + m;
+    console.log("I am the show ", e);
+}
+undefined
+show();
+VM155:5 I am the show  30
+undefined
+function show(){
+    var z = 10;
+    var m = 20;
+    if(z>m){
+        return z * m;
+    }
+    else{
+    var e = z + m;
+    console.log("I am the show ", e);
+        return e;
+    }
+}
+undefined
+var n = show();
+VM222:9 I am the show  30
+undefined
+n;
+30
+function show(){
+    var z = 10;
+    var m = 20;
+    var e = z + m;
+    console.log("I am the show ", e);
+}
+undefined
+var n = show();
+VM283:5 I am the show  30
+undefined
+n;
+undefined
+var b = 20;
+undefined
+b+ 90;
+110
+show(10,20,30,40,50);
+VM283:5 I am the show  30
+undefined
+show();
+VM283:5 I am the show  30
+undefined
+show([10,20], {id:1001,name:'Amit'}, true);
+VM283:5 I am the show  30
+undefined
+show;
+ƒ show(){
+    var z = 10;
+    var m = 20;
+    var e = z + m;
+    console.log("I am the show ", e);
+}
+typeof show;
+'function'
+console.dir(show);
+VM692:1 ƒ show()length: 0name: "show"prototype: {}constructor: ƒ show()[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: Objectget __proto__: ƒ __proto__()set __proto__: ƒ __proto__()arguments: nullcaller: null[[FunctionLocation]]: VM283:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function add(x,y){}
+undefined
+console.dir(add);
+VM807:1 ƒ add(x,y)length: 2name: "add"prototype: {}arguments: nullcaller: null[[FunctionLocation]]: VM747:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function show(){
+    console.log(arguments);
+}
+undefined
+show(10,20);
+VM882:2 Arguments(2) [10, 20, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+function show(){
+    console.log(arguments);
+    console.log(arguments instanceof Array);
+}
+undefined
+show(1,2);
+VM984:2 Arguments(2) [1, 2, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM984:3 false
+undefined
+function show(){
+    console.log(arguments.length);
+    console.log(arguments instanceof Array);
+}
+undefined
+show(10,20);
+VM1034:2 2
+VM1034:3 false
+undefined
+show(10,20,30,40,50);
+VM1034:2 5
+VM1034:3 false
+undefined
+function add(){
+    var sum = 0;
+    for(let i = 0; i<arguments.length; i++){
+        sum = sum + arguments[i];
+    }
+    return sum;
+}
+
+undefined
+add();
+0
+add(1,2,3,4,5);
+15
+add(1,2,3,"4",5);
+'645'
+function add(){
+    var sum = 0;
+    for(let i = 0; i<arguments.length; i++){
+        sum = sum + parseInt(arguments[i]);
+    }
+    return sum;
+}
+
+undefined
+add(1,2,3,"4",5);
+15
+console.log("A is ", 10, "B is ",20);
+VM1531:1 A is  10 B is  20
+undefined
+function add(){
+    var sum = 0;
+    for(var i = 0; i<arguments.length; i++){
+        sum = sum + parseInt(arguments[i]);
+    }
+    return sum;
+}
+
+undefined
+function add(){
+    var sum = 0;
+    console.dir(arguments);
+    for(var i = 0; i<arguments.length; i++){
+        sum = sum + parseInt(arguments[i]);
+    }
+    return sum;
+}
+
+undefined
+add(10,20,30);
+VM1583:3 Arguments(3)0: 101: 202: 30callee: ƒ add()length: 3Symbol(Symbol.iterator): ƒ values()[[Prototype]]: Object
+60
+function add(...args){
+    var sum = 0;
+    console.dir(args);
+    for(var i = 0; i<args.length; i++){
+        sum = sum + parseInt(args[i]);
+    }
+    return sum;
+}
+
+undefined
+add(1,2,3);
+VM1659:3 Array(3)
+6
+function add(a,b,c,...args){
+    var sum = 0;
+    console.dir(args);
+    for(var i = 0; i<args.length; i++){
+        sum = sum + parseInt(args[i]);
+    }
+    return sum;
+}
+
+undefined
+function add(a,b,c,...args, ...q){
+    var sum = 0;
+    console.dir(args);
+    for(var i = 0; i<args.length; i++){
+        sum = sum + parseInt(args[i]);
+    }
+    return sum;
+}
+
+VM1754:1 Uncaught SyntaxError: Rest parameter must be last formal parameter

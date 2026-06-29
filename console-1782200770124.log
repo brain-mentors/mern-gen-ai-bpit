@@ -1,0 +1,94 @@
+typeof undefined;
+'undefined'
+typeof null;
+'object'
+undefined == null;
+true
+undefined === null;
+false
+NaN == NaN;
+false
+10 + undefined;
+NaN
+10 + Infinity;
+Infinity
+10 + [];
+'10'
+[10, 20 ,30] + " - "+ [40,50]
+'10,20,30 - 40,50'
+var obj = {id:1001, name:'Ram'};
+undefined
+10 + "Amit";
+'10Amit'
+10 + 20;
+30
+10 + 20 + "Amit";
+'30Amit'
+var obj = {id :1001 , name:'Amit'};
+undefined
+obj.toString();
+'[object Object]'
+var arr = [10, 20, 30 ,40];
+undefined
+arr.toString();
+'10,20,30,40'
+[10,20,30] + {id:1001};
+'10,20,30[object Object]'
+{id:1001, name:'Amit'} + [10,20,30];
+VM955:1 Uncaught SyntaxError: Unexpected token ':'
+{}+ {};
+NaN
+[] + [];
+''
+{} + []
+0
+[] + {}
+'[object Object]'
+var w = {};
+undefined
+{id: 1001 , name:'Amit'}
+{id: 1001, name: 'Amit'}
+{} + {};
+NaN
+{} + [];
+0
+[] + {};
+'[object Object]'
+[].toString();
+''
+[].toString() + {}.toString();
+'[object Object]'
+[] + {};
+'[object Object]'
+({} + [])
+'[object Object]'
+{} == {};
+VM1435:1 Uncaught SyntaxError: Unexpected token '=='
+{id:1001}  == {id:1002};
+VM1474:1 Uncaught SyntaxError: Unexpected token '=='
+var t = {id:1001};
+undefined
+var t2 = {id:1001};
+undefined
+t == t2;
+false
+{} == [];
+VM1593:1 Uncaught SyntaxError: Unexpected token '=='
+{} + [];
+0
+{} + {};
+NaN
+[] + {};
+'[object Object]'
+10 + undefined;
+NaN
+10 + [10,20,30]
+'1010,20,30'
+"Amit" - "Srivastava"
+NaN
+10 * 2;
+20
+"Amit"*10;
+NaN
+({})
+{}
