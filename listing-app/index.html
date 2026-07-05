@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor CRUD</title>
+    
+    <script src="controllers/crud-controller.js" type="module"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Product CRUD </h1>
+    </div>
+    <div id="main">
+        <div id="product-details">
+            <div>
+                <label for="">Id</label>
+                <input id="id" type="text" placeholder="Type Id Here">
+            </div>
+            <div>
+                <label for="">Name</label>
+                <input type="text" id="name" placeholder="Type Product Name Here">
+            </div>
+            <div>
+                <label for="">Desc</label>
+               <textarea id="desc" 
+               placeholder="Type Product Desc Prompt Here" rows="6" cols="10"> 
+            </textarea>
+            </div>
+            <div>
+                <label for="">Price</label>
+                <input type="range" min="1" max="5000" id="price" value="10">
+            </div>
+            <div>
+                <label for="">Image</label>
+                <input type="url" id="url" placeholder="Type Product Image URL">
+            </div>
+        </div>
+        <div id="summary">
+            <p>Total Records <span id="total"></span>
+            Mark Records <span id="mark-total"></span>
+            UnMark Records <span id="unmark-total"></span>
+            </p>
+        </div>
+        <div id="operations">
+              <button id="add">Add</button>
+              <button>Delete</button>
+              <button>Search</button>
+              <button>Update</button>
+              <button>Save</button>
+              <button>Load</button>
+              <button>Clear All</button>  
+        </div>
+        <div id="product-list">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Desc</th>
+                        <th>Image</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody id="products">
+
+                </tbody>
+                </table>
+        </div>
+    </div>
+</body>
+</html>
